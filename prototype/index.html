@@ -1,23 +1,94 @@
 <!doctype html>
 
 <html lang="en">
-<div class="header">
+<div class="head">
+  
 <head>
-  <meta charset="utf-8">
-<img src="/workspaces/Web-Tecnologies/prototype/assets/img/ualr-icon.png" alt="University of Arkansas at Little Rock Logo" width="200" height="200">
+  <!--This is the head which contains meta date or data of data-->
   <title>First Assignment | Marvin Spencer</title>
-  <meta name="description" content="Keyword Rich Description">
+   <!--The appears on the bar of my webpage and defines what the webpage is-->
+  <meta charset="utf-8">  
+   <!---This helps display english characters correctly and helps prevent scripting attacks---->
+   <meta name="description" content="University Wiki">
+  <!--This is the descripton of the page which can also help with SEO-->
+   <meta name="keywords" content="Universities, Little Rock, College">
+  <!---This helps users finding my webpage using search engine optimization-->
   <meta name="author" content="Marvin Spencer">
+
+  <style>
+    /*I took some liberties by playing with some CSS*/
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .back-to-top {
+      display: block;
+      margin-top: 20px;
+    }
+      
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;  
+        }
+        .top-center {
+            text-align: center;
+            margin-top: 20px;  
+        }
+    </style>
+    
+  
 
 </head>
 </div>
 
 <div class="body">
+  <!--This is the body and most of the content-->
 <body>
-<article>
-  <h1>University of Arkansas at Little Rock: A Brief History<h1></article>
-<section>
-    <p>The <strong>University of Arkansas at Little Rock (UA Little Rock)</strong> is a 
+  <div class="top-center">
+
+  <img src="assets/img/ualr-icon.png" alt="University of Arkansas at Little Rock Logo" width="200" height="200" class="center">
+  </div>
+  <nav>
+    <ul>
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/University_of_Arkansas_at_Little_Rock" title="About">About</a></li>
+        <li><a href="https://ualr.edu" target="_blank" title="UALR">UALR</a></li>
+        <li><a href="mspencer2@ualr.edu" title="Contact">Contact</a></li>
+    </ul>
+</nav>
+    
+  <div id="main-container">   
+<main>
+   
+  <header>
+    <div class="header"></div><h1>University of Arkansas at Little Rock: A Brief History<h1></div>
+<!--I realized how important it is to put the closing div tags because my CSS was misaligning my first half the the page to center rather than aligning to the left-->
+  </header>
+
+    <div class="content"><p>The <strong>University of Arkansas at Little Rock (UA Little Rock)</strong> is a 
       <a href="https://en.wikipedia.org/wiki/Public_university">public</a>
       <a href="https://en.wikipedia.org/wiki/Research_university"> research university</a>in 
       <a href="https://en.wikipedia.org/wiki/University_of_Arkansas_at_Little_Rock">Little Rock, Arkansas.</a> 
@@ -35,12 +106,12 @@
       include a learning resource center, art galleries, KUAR public radio station<sup>[6]</sup> ,  University Television, and 
       a campus-wide wireless network. It is 
       <a href="https://en.wikipedia.org/wiki/Carnegie_Classification_of_Institutions_of_Higher_Education">
-        classified</a> among "R2: Doctoral Universities – High research activity".</p>
-    </section>
+        classified</a> among <q>R2: Doctoral Universities – High research activity.</q></p>
+    </div>
 
-    <div>
-    <article> 
-    <h2>Academics</h2><article>
+    
+    
+    <div class="Section 2"><h2>Academics</h2></div>
     <section>
     <p>The university features more than 100 undergraduate degrees and 60 graduate degrees, 
       including graduate certificates, master's degrees, and doctorates, through both traditional 
@@ -55,55 +126,58 @@
   </ul>
     </section>
   </div>
-    <article><h2> Student life</h2></article>
+  <div class="Student Life"><h2> Student life</h2></div>
     
-    <h4> Student body composition as of May 2, 2022</h4> 
-    <table>
-      <thead>
-        <tr>
-          <th>
-            Race and ethnicity
-          </th>
+      <div class="Table"><table>
+      <caption><h4> Student body composition as of May 2, 2022</h4></caption>
+      <tr>
+        <th scope="col">Race and enthnicity</th>
+        <th scope="col">Total </th>
+        <th scope="col">Color Code</th>
+        <th scope="col">Undergraduate </th>
+        <th scope="col">Graduate </th>
         </tr>
-      </thead> 
-    
-    <tbody>
-      <tr> 
+      <tr>
         <td>White</td>
-        <td 
-        align="right">48%
-        </td>
-      </tr>	
-      <tr> 
-        <td>Black
-
-        </td>
-        <td align="right">27%
-
-        </td>
-      </tr>				
-      <tr> 
-        <td>Other
-
-        </td>
-        <td align="right">15%
-
-        </td>
-      </tr>				
-      <tr> 
-        <td>
-          Hispanic
-        </td>
-        <td align="right">4%
-
-        </td>
-      </tr>			
-      <tr> <td>Foreign national</td><td align="right">3%</td></tr>		
-      <tr> <td>Asian</td><td align="right">2%</td></tr>				
-      <tr> <td>Native American</td><td align="right">1%</td></tr>		</tbody>
+        <td>48%</td>
+        <td style="background-color: #8f8f8f;"> </td>
+        <td>71.06%</td>
+        <td>35%</td>
+        </tr>
+      </tr>
+      <tr>
+        <td>Black</td>
+        <td>27%</td>
+        <td style="background-color: #000000;"> </td>
+        <td>15.88%</td>
+        <td>35%</td>
+        </tr>
+        <tr>
+          <td>Hispanic</td>
+          <td>4%</td>
+          <td style="background-color: #00ff3c;"> </td>
+          <td>5.88%</td>
+          <td>15%</td>
+          </tr>
+          <tr>
+            <td>Asian</td>
+            <td>2%</td>
+            <td style="background-color: #ff00a6;"> </td>
+            <td>3.53%</td>
+            <td>5%</td>
+            </tr>
+            <tr>
+              <td>Other</td>
+              <td>15%</td>
+              <td style="background-color: #ff6a00;"> </td>
+              <td>3.53%</td>
+              <td>10%</td>
+              </tr>
+              <td>
+        </tr>
     </table>
-    
-     
+    </div>
+     <div class="Student Life Content">
     <p> The student life at UA Little Rock is typical of public universities in the 
       United States. It is characterized by student-run organizations and affiliation groups
       that support social, academic, athletic, and religious activities and interests. 
@@ -114,8 +188,9 @@
       and sorority life. The proximity of the UA Little Rock campus to downtown Little Rock 
       enables students to take advantage of a wide array of recreational, entertainment, educational, 
       internship, and employment opportunities that are not available anywhere else in Arkansas<sup>[20]</sup>.</p>
+      </div>
     
-    
+    <div class="Campus Living">
       <h3>Campus living</h3>
     
     <p>UA Little Rock provides a variety of on-campus living options for students ranging from 
@@ -123,8 +198,10 @@
     residence halls on the eastern side of the campus and the University Village Apartment 
     Complex<sup>[21]</sup> on the southern side of campus. Six learning communities focusing on 
     criminal justice, arts and culture, majors and careers, future business innovators, 
-    nursing careers, and STEM are available to students.</p>
+    nursing careers, and STEM are available to students.</p></div>
     
+    <div class="Athletics">
+      
     <h3>Athletics</h3>
     
     <p>UA Little Rock's 14 athletic teams are known as the Little Rock Trojans, with 
@@ -135,16 +212,17 @@
         Little Rock's main athletic offices are located in the Jack Stephens Center. UA Little Rock offers the 
         following sports:</p>
     
-    Baseball
-    Men's and Women's Basketball
-    Men's and Women's Golf
-    Women's Volleyball
-    Women's Soccer
-    Women's Swimming/Diving
-    Men's and Women's Cross Country
-    Men's and Women's Track and Field (Indoor and Outdoor)
-    Men's wrestling
-    <br><br><!---Delete and make table tomarrow-->
+    <ol>
+      <li>Baseball</li>
+    <li>Men's and Women's Basketball</li>
+   <li>Men's and Women's Golf</li>
+    <li>Women's Volleyball</li>
+    <li>Women's Soccer</li>
+    <li>Women's Swimming/Diving</li>
+    <li>Men's and Women's Cross Country</li>
+    <li>Men's and Women's Track and Field (Indoor and Outdoor)</li>
+    <li>Men's wrestling</li>
+    </ol>
 
     <p>Two Little Rock teams that do not compete in the Sun Belt are the women's swimming and 
     diving team (<a href="https://en.wikipedia.org/wiki/Missouri_Valley_Conference">Missouri Valley Conference</a>) 
@@ -152,23 +230,45 @@
     newest sport, starting in 2019, and is the first Division I program in Arkansas.</p>
     
     <p>Little Rock will move to the <a href="https://en.wikipedia.org/wiki/Ohio_Valley_Conference">Ohio Valley Conference</a> for the 2022-23 season.</p>
-    
+    </div>
     <h2>Collections and archives</h2>
     
-    On July 1, 2014, the UA Little Rock Collections and Archives division was created. The 
-    division encompasses:
+    <div class="Archives">
+    On July 1, 2014, the UA Little Rock Collections and Archives division was created. 
     
-    <ul>
-      <li>Ottenheimer Library
+    <dl>
 
-      </li>
-      <li>Center for Arkansas History and Culture
+      <blockquote><dt>The division encompasses:</dt></blockquote>
+      <blockquote>
+      <dd>*Ottenheimer Library</dd>
 
-      </li>
-      <li>Sequoyah National Research Center
+      <dd>*Center for Arkansas History and Culture
+
+      </dd>
+      <dd>*Sequoyah National Research Center
       
-      </li>
-  </ul>
-</div>
-</body>
-</html>
+      </dd>
+    </blockquote>
+  </dl>
+    </div>
+      </div>
+        </main>
+      </div>
+          </body>
+        </div>
+      <div class="footer">
+    <footer>
+      <h6>&copy; <span id="year"></span> Marvin Spencer. All rights reserved.
+      |<a href="mspencer2@ualr.edu">Email</a>|
+      <a href="#top" class="back-to-top">Back to Top</a>
+    
+    </h6>
+    </footer>
+  </div> 
+  <script>
+    const date = new Date()
+   const year = document.getElementById("year");
+   year.innerHTML = date.getFullYear();
+    </script>
+  
+            </html>
