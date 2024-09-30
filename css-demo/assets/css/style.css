@@ -1,0 +1,38 @@
+/* css-demo/assets/css/style.css */
+
+/*  ---------------Color Scheme-----------------  */
+
+
+/* ----------Main Colors---------- */
+
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background-color: #dfddd7;
+    font-family: "Oswald", Oswald, Arial, Helvetica, sans-serif sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    
+}
+
+header.primary{
+    background-color: #996d6d;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 11px #000000;
+    
+}
+
