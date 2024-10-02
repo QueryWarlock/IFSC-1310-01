@@ -1,10 +1,18 @@
 /* css-demo/assets/css/style.css */
 
 /*  ---------------Color Scheme-----------------  */
+/* Color Theme Swatches in Hex */
+.Retro-internet-artworks-1-hex { color: #F24162;}
+.Retro-internet-artworks-2-hex { color: #486CD9;}
+.Retro-internet-artworks-3-hex { color: #F2EB80;}
+.Retro-internet-artworks-4-hex { color: #F28705;}
+.Retro-internet-artworks-5-hex { color: #F2E6D8;}
 
 
+/* Heading Fonts*/
+font-family Titan One
 /* ----------Main Colors---------- */
-
+.Retro-internet-artworks-5-hex { color: #F2E6D8;}
 
 /*  ---------------Box Sizing-----------------  */
 
@@ -18,8 +26,8 @@ html {
   }
 
 body {
-    background-color: #dfddd7;
-    font-family: "Oswald", Oswald, Arial, Helvetica, sans-serif sans-serif;
+    background-color: #c7c5ac;
+    font-family: "Papyrus", Papyrus, fantasy, Oswald, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -29,7 +37,7 @@ main {
 }
 
 header.primary{
-    background-color: #996d6d;
+    background-color: #3565F2;
     color: white;
     text-align: center;
     text-shadow: 2px 2px 11px #000000;
