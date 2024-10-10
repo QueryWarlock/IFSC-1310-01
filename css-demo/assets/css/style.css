@@ -16,18 +16,40 @@ html {
   box-sizing: inherit;
 }
 
-body{
-font-family: "Gabarito", sans-serif;
-margin:0;  
+/*  ---------------Reponsive Images-----------------  */
+img {
+  max-width: 100%;
 }
 
-main{}
+/*  --------------- Utility Classes -----------------  */
 
-header.primary{
-  background-color: #3b638b;
+.container {
+  width: 80vw;
+  max-width: 960px;
+  margin: 40px auto;
+}
+
+/*  --------------- Global Styles -----------------  */
+
+body {
+  font-family: "Gabarito", sans-serif;
+  margin: 0;
+  /*
+  background-image: url("https://assets.codepen.io/7248/grey-kitten_1.jpg");
+  background-repeat:no-repeat;
+  background-size:contain;
+  */
+}
+
+main {
+}
+
+header.primary {
+background-color: #3b638b;
+background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23172635' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
   color: #ffffff;
   text-align: center;
-  text-shadow:1px 1px #000000;
+  text-shadow: 1px 1px #000000;
   /*long form*/
   padding-top: 40px;
   padding-right: 40px;
@@ -41,68 +63,147 @@ header.primary{
   padding: 20px 40px;
 }
 
-header.primary h1{
-font-size:2.4rem;
-/* top | left and right | bottom */
-margin: 20px 0 0;  
+header.primary h1 {
+  font-size: 2.4rem;
+  /* top | left and right | bottom */
+  margin: 20px 0 0;
 }
 
-header.primary h1 a{
-  color:#ffffff;
-  text-decoration:none;
+header.primary h1 a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-header.primary h2{
-  font-size:1.3rem;
-  margin:0;
+header.primary h2 {
+  font-size: 1.3rem;
+  margin: 0;
 }
 
-header.primary nav {}
-header.primary nav ul{
+header.primary nav {
+  max-width: 960px;
+  margin: auto;
+}
+header.primary nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+header.primary nav ul li {
+  list-style-type: none;
+}
+header.primary nav ul li a {
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid #c0c0c0;
+  padding: 7.5px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+header.primary nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#content {
+  line-height: 1.4;
+}
+
+#content h2 {
+  color: #3b638b;
+  border-bottom: 1px dotted darkgrey;
+}
+
+#blog {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#blog article.post {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: 0.4s;
+}
+
+#blog article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+#blog figure {
+  margin: 0;
+}
+
+#blog figcaption,
+time.post-date {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  text-align: center;
+  color: #c0c0c0;
+}
+
+#blog .post a {
+  color: #3b638b;
+}
+
+aside[role="complementary"]{
+background-color: #172635;
+color:#ffffff;
+padding:40px 0;  
+}
+
+aside .container{
   display:flex;
   flex-direction:row;
   justify-content:space-around;
-  padding:10px 0;
+  gap:40px;
 }
-header.primary nav ul li{
-  list-style-type:none;
-}
-header.primary nav ul li a{
+
+aside article.widget a{
   color:#ffffff;
-  font-size:.9rem;
-  text-decoration:none;
-  border:1px solid #c0c0c0;
-  padding: 7.5px 10px;
-  background-color: rgba(0,0,0, .4);
-  border-radius:20px;
-  transition:.4s;
 }
 
-header.primary nav ul li a:hover{
-   background-color: rgba(0,0,0, .8);
+aside article.widget a:last-of-type{
+  display:block;
+  margin-top:20px;
+  text-align:right;
 }
 
+aside article.widget footer{
+  display:none;
+}
 
+#colophon{
+  background-color: #3b638b;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23172635' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+  padding:5px;
+  color:#ffffff;
+  font-size:1.2rem;
+  text-align:center;
+}
 
 /* --------- Media Queries ----------- */
 
-@media screen and (max-width: 560px){
-  
-header.primary nav ul{
-  flex-direction:column;
-  gap:10px;
-  max-width:200px;
-  marvin:0 auto;
-}  
-  
-  header.primary nav a{
-    display:block;
-  }  
-  
-  
-  
-  
-  
+@media screen and (max-width: 560px) {
+  header.primary nav ul {
+    flex-direction: column;
+    gap: 10px;
+    max-width: 200px;
+    margin: 10px auto;
+  }
+  header.primary nav a {
+    display: block;
+  }
 }
 
+@media screen and (max-width: 420px) {
+  #blog {
+  flex-direction: column;
+}
+}
 
