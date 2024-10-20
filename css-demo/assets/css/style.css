@@ -1,6 +1,6 @@
 /* ------  css-demo --------*/
 
-/*  ---- Color Scheme ---- 
+/*  ---- Color Scheme #FFF17C, #77907A, #8F3558 ---- 
 Main Color - #3C85FA
 
 */
@@ -24,14 +24,14 @@ img {
 }
 
 #practice blockquote {
-  border: 4px double #c0c0c0;
+  border: 4px double #77907A;
   padding: 20px 40px;
   margin: 40px 80px;
   border-radius: 30px 0;
-  background-color: #3b638b;
-  color: #ffffff;
+  background-color: #8F3558;
+  color: #FFF17C;
   line-height: 1.4;
-  text-shadow: 1px 1px #000;
+  text-shadow: 1px 1px #000000;
 }
 /*  --------------- Utility Classes -----------------  */
 
@@ -39,6 +39,14 @@ img {
   width: 80vw;
   max-width: 960px;
   margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url('../img/vector-abstract-colorful-triangle-pattern-background.jpg');
+  background-repeat: space repeat;
+  background-position-x: center;
+  background-blend-mode: lighten;
+  
+  
+  
 }
 
 .img-right {
@@ -65,37 +73,34 @@ img {
 }
 /*  --------------- Global Styles -----------------  */
 
-body {
-  font-family: "Gabarito", sans-serif;
-  margin: 0;
-  /*
-  background-image: url("https://assets.codepen.io/7248/grey-kitten_1.jpg");
-  background-repeat:no-repeat;
-  background-size:contain;
-  */
-}
+body .cinzel-decorative-regular {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+  }
 
-main {
-}
+
+
+
+  
+
 
 header.primary {
-background-color: #3b638b;
-background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23172635' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
-  color: #ffffff;
-  text-align: center;
+  background-color: rgba (0,0,0,0.5);
+  background-image: url("../img/latin-art-deco.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    text-align: center;
   text-shadow: 1px 1px #000000;
-  /*long form*/
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  /*Single value short hand*/
-  padding: 40px;
-  /* T,R,B,L */
-  padding: 20px 40px 20px 40px;
-  /* Two Value Top/Bottom / L/R */
-  padding: 20px 40px;
+ padding-top: 10px;
+  padding-bottom: 20px;
+  color: #ffffff;
 }
+
+
+
 
 header.primary h1 {
   font-size: 2.4rem;
@@ -105,12 +110,21 @@ header.primary h1 {
 
 header.primary h1 a {
   color: #ffffff;
+  background-color: #8F3558;
   text-decoration: none;
+  border: 2px solid #8F3558;
+  padding: 1px 1px;
+  display: inline-block;
 }
 
 header.primary h2 {
   font-size: 1.3rem;
   margin: 0;
+  color: #ffffff;
+  background-color: #8F3558;
+  text-decoration: none;
+  border: 2px solid #8F3558;
+  display: inline-block;
 }
 
 header.primary nav {
@@ -132,13 +146,13 @@ header.primary nav ul li a {
   text-decoration: none;
   border: 1px solid #c0c0c0;
   padding: 7.5px 10px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(143, 53, 88, .9);
   border-radius: 20px;
   transition: 0.4s;
 }
 
 header.primary nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(119, 144, 122, 1);
 }
 
 #content {
@@ -173,6 +187,7 @@ header.primary nav ul li a:hover {
 
 #blog figure {
   margin: 0;
+  
 }
 
 #blog figcaption,
