@@ -73,13 +73,13 @@ img {
 }
 /*  --------------- Global Styles -----------------  */
 
-body .cinzel-decorative-regular {
-    font-family: "Cinzel Decorative", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: auto;
-  }
-  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+body.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Poiret+One&display=swap');
+
 
   :root {
     --yellow: #ffdd40;
@@ -94,7 +94,7 @@ body .cinzel-decorative-regular {
     overflow-x: hidden;
     display: flex;
     justify-content: center;
-    font-family: "Lato", Arial, Helvetica, serif;
+    font-family: "Cinzel Decorative", Arial, Helvetica, serif;
     background: linear-gradient(90deg, #131417, var(--dark) 35% 65%, #131417);
     font-size: 1em;
   }
@@ -740,7 +740,7 @@ aside article.widget footer{
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Cinzel Decorative", sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -816,7 +816,7 @@ a, a:visited, a:active {
     padding: 5px;
     width: 50px;
     height: 50px;
-    font-family: monospace;
+    font-family: "Cinzel Decorative", sans-serif;
     font-weight: bold;
     font-size: 2rem;
     border: 3px solid goldenrod;
