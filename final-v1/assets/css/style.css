@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
 
+/* General Styling */
 body {
     margin: 0;
     font-family: 'Roboto Mono', monospace;
     color: #ffffff;
-    background-color: #1a1a1a;  
+    background-color: #1a1a1a;
     line-height: 1.6;
 }
 
-
+/* Wrapper for Centered Content */
 .wrapper {
     width: 90%;
     max-width: 1200px;
@@ -16,23 +17,38 @@ body {
     padding: 20px;
 }
 
-
+/* Header Styling */
 header {
     background-color: #333333;
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
-header img {
-    max-width: 150px;
+/* Logo Styling */
+header img.logo {
+    max-width: 175px;
     margin-bottom: 10px;
+}
+
+.header-content {
+    color: #e6e6e6;
 }
 
 header h1 {
     font-size: 2.5em;
     margin: 0;
-    color: #e6e6e6;
     font-weight: 500;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 500;
+    background: linear-gradient(to right, #086f91, #86750593); /* Blue to golden yellow gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Fallback for browsers that don't support background-clip */
 }
 
 header p {
@@ -40,6 +56,7 @@ header p {
     color: #cfcfcf;
 }
 
+/* Navigation Styling */
 nav ul {
     list-style: none;
     padding: 0;
@@ -63,9 +80,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00bfff;  
+    color: #00bfff; /* SpaceX blue accent */
 }
 
+/* Main Content Styling */
 main {
     padding: 20px;
     background-color: #1f1f1f;
@@ -74,7 +92,7 @@ main {
 }
 
 h2, h3 {
-    color: #00bfff;  
+    color: #00bfff; /* SpaceX blue accent */
 }
 
 h2 {
@@ -95,16 +113,57 @@ ul li {
     margin-bottom: 10px;
 }
 
+/* Interactive Gallery Styling */
+.interactive-gallery {
+    position: relative;
+    max-width: 500px;
+    margin: 20px auto; /* Centers the gallery on the page */
+    text-align: center;
+}
+
+.gallery-image {
+    width: 100%;
+    display: none; /* Hide all images by default */
+    border-radius: 8px;
+}
+
+/* Show only the active image */
+.gallery-image.active {
+    display: block;
+}
+
+.dots {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb; /* Inactive dot color */
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Active dot color */
+.dot.active {
+    background-color: #00bfff; /* SpaceX blue accent for active dot */
+}
+
+/* Footer Styling */
 footer {
     background-color: #333333;
     text-align: center;
-    padding: 15px 20px;
+    padding: 20px;
     margin-top: 20px;
     color: #cfcfcf;
 }
 
 footer a {
-    color: #00bfff;  
+    color: #00bfff;
     text-decoration: none;
 }
 
@@ -112,6 +171,7 @@ footer a:hover {
     color: #ffffff;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.8em;
