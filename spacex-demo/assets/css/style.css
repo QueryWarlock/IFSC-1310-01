@@ -329,6 +329,12 @@ body.faq-page .copyrightText {
     flex-shrink: 0; /* Prevent the footer from shrinking */
 }
 
+body.faq-page h2,
+body.faq-page h3 {
+    display: grid;
+    position: relative;
+    text-align: center;
+}
 
 /* Footer Styling */
 footer {
@@ -522,44 +528,51 @@ footer a:hover {
     }
 }
 
-details {
-    margin-bottom: 15px;
-    background-color: #2a2a2a; /* Matches flex-row background */
+
+
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #333;
     border-radius: 8px;
+    background-color: #2a2a2a;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #333;
+}
+
+.accordion-header {
+    background-color: #333333;
+    color: #00bfff;
+    padding: 15px 20px;
+    font-size: 1.2em;
     cursor: pointer;
-    color: #ffffff;
     transition: all 0.3s ease;
 }
 
-details[open] {
-    background-color: #333333; /* Darker shade for open details */
-    border: 2px solid #00bfff; /* Highlight border when open */
+.accordion-header:hover {
+    background-color: #444444;
 }
 
-summary {
-    font-size: 1.2em;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: linear-gradient(to right, #00bfff, #cfcdc4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 10px;
-    cursor: pointer;
-    list-style: none; /* Removes default arrow styling */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 20px;
+    background-color: #2a2a2a;
+    color: #e6e6e6;
 }
 
-details p {
-    margin-top: 10px;
-    font-size: 1em;
-    line-height: 1.6;
-    color: #e6e6e6; /* Slightly lighter text for better readability */
+.accordion-content p {
+    padding: 15px 0;
+    margin: 0;
+    border-top: 1px solid #444;
 }
 
-details summary:hover {
-    text-decoration: underline; /* Adds hover effect for summary */
-}
 
 /* Responsive Table Design */
 @media screen and (max-width: 768px) {
@@ -570,4 +583,30 @@ details summary:hover {
     .missions-table th, .missions-table td {
         padding: 10px; /* Adjusts padding for smaller screens */
     }
+}
+
+
+
+.sort-arrows {
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+.sort-arrows:hover {
+    color: #00bfff;
+}
+
+thead input {
+    width: 90%;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+thead input:focus {
+    outline: none;
+    border-color: #00bfff;
 }
