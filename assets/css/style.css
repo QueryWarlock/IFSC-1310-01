@@ -1,5 +1,122 @@
-body{
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    background-color: #8fbc8f;
-    
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f4e3; /* Fall-inspired light beige background */
+    color: #5c4033; /* Warm brown text for better contrast with the new background */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #8b4513; /* Saddle brown for a fall-inspired header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffcc66; /* Golden yellow for a vibrant fall theme */
+}
+
+/* Navigation */
+nav {
+    margin: 20px 0;
+    background: #f5deb3; /* Wheat background */
+    border: 1px solid #deb887; /* Burlywood border */
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #8b0000; /* Dark red for emphasis */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #cd5c5c; /* Indian red for links */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d2691e; /* Chocolate color for hover effect */
+}
+
+/* Main Content */
+main {
+    background: #fff8dc; /* Cornsilk background for a warm tone */
+    padding: 20px;
+    border: 1px solid #f4a460; /* Sandy brown border */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #8b4513; /* Saddle brown for headings */
+}
+
+main p {
+    margin-bottom: 10px;
+    color: #5c4033; /* Warm brown for text */
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background: #8b4513; /* Saddle brown footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
+/* Profile Image Styling */
+.profile-image {
+    border-radius: 50%; /* Circular image remains */
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #ffcc66; /* Golden yellow border for fall theme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }

@@ -1,0 +1,31 @@
+/* Gallery styles */
+.gallery img {
+    width: 500px;
+    height: 317px;
+    margin: 0 10px;
+  }
+  
+  /* Quote Rotator */
+  .quotes blockquote {
+    font-size: 18px;
+    line-height: 1.5;
+    font-style: italic;
+    color: #333;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  /* News Ticker */
+  .ticker {
+    list-style-type: none;
+    padding: 0;
+    overflow: visible
+  }
+  
+  .ticker li {
+    font-size: 16px;
+    color: #444;
+    padding: 5px;
+  }
+  

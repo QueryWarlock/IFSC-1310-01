@@ -8,8 +8,10 @@
     <meta name="robots" content="noindex">
     <title>SpaceX Dragon - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMri8rAW2LN28VK9vYbCRV6Npa6Md9p0ff4lr3" crossorigin="anonymous">
-    <script src="assets/js/faq-accordian.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    
     
 </head>
 <body>
@@ -50,8 +52,14 @@
       <h2>Configurations:</h2>
     </div>
     <div class="flex-row">
+                
+              
                 <figure>
-                    <img src="assets/img/dragon-intertior-cargo.jpg" alt="Dragon Cargo Configuration" class="gallery-image active">
+                <div class="slideshow">
+                  <img src="assets/img/SpaceX_Dragon_2_Pad_Abort_Test_Infographic.jpg" alt="Delivery Infographic">
+                  <img src="assets/img/dragon-intertior-cargo.jpg" alt="Dragon Cargo Configuration">
+              </div>
+
                     <figcaption><strong>DRAGON CARGO CONFIGURATION</strong></figcaption>
                 </figure>
                 <ul>
@@ -69,7 +77,11 @@
             <!-- Crew Configuration Row -->
             <div class="flex-row">
                 <figure>
-                    <img src="assets/img/Dragoncrew2.jpg" alt="Dragon Crew" class="gallery-image active">
+                  <div class="slideshow">
+                    <img src="assets/img/NASA_logo.svg.png" alt="NASA Logo">
+                    <img src="assets/img/SpaceX_Dragon_2_Pad_Abort_Test_Infographic.jpg" alt="Dragon Abort Test">
+                    <img src="assets/img/launch.jpg " alt="Prepare for Launch">
+                </div>
                     
                     <figcaption><strong>DRAGON CREW</strong></figcaption>
                 </figure>
@@ -87,8 +99,11 @@
             <!-- Dragon Lab  Row -->
             <div class="flex-row">
                 <figure>
-                    <img src="assets/img/SpaceX_Dragon_2_Pad_Abort_Test_Infographic.jpg" alt="Dragon Lab Configuration" class="gallery-image active">
-                     
+                  <div class="slideshow">
+                    <img src="assets/img/dragon-capsule-5.jpg" alt="Unmanned Vehicle">
+                    <img src="assets/img/spacex-crew-dragon-trunk.jpg" alt="Convient Transport">
+                    <img src="assets/img/dragon-intertior-crew.jpg" alt="Microgravity Lab">
+                     </div>
                     <figcaption><strong>A FREE-FLYING MICROGRAVITY<br> LABORATORY</strong></figcaption>
                 </figure>
                 <ul>
@@ -170,7 +185,7 @@
         <p>&copy; 2023 SpaceX Dragon. All Rights Reserved</p>
       </div>
       
-    <script src="assets/js/faq.js"></script>
+     <script src="assets/js/slideshow.js"></script>
 
     
 </body>

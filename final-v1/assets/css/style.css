@@ -571,3 +571,19 @@ details summary:hover {
         padding: 10px; /* Adjusts padding for smaller screens */
     }
 }
+
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Set desired width */
+    height: 300px; /* Set desired height or use a percentage if responsive height is needed */
+}
+
+.slideshow img {
+    display: block;
+    position: absolute;
+    width: 100%; /* Make sure the image spans the full width of the container */
+    height: 100%; /* Make sure the image spans the full height of the container */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    object-position: center; /* Center the image within its container */
+}
