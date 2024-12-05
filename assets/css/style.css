@@ -120,3 +120,119 @@ footer {
     align-items: center;
     gap: 10px;
 }
+
+
+/* Profile Image Styling */
+.profile-image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #ffcc66;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+/* Sidebar Trigger */
+.side-nav-trigger {
+    position: fixed;
+    top: 37%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(139, 69, 19, 0.9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+.side-nav-trigger.hidden {
+    opacity: 0; /* Makes the trigger invisible */
+    pointer-events: none; /* Prevents interaction when hidden */
+}
+
+/* Sidebar */
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(139, 69, 19, 0.9);
+    color: #fff;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.side-nav.open {
+    left: 0;
+}
+
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-nav ul li {
+    margin-bottom: 20px;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.side-nav ul li a:hover {
+    color: #ffcc66;
+}
+
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-nav ul li {
+    margin-bottom: 20px;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.side-nav ul li a i {
+    margin-right: 10px;
+}
+
+.side-nav ul li a:hover {
+    color: #ffcc66; /* Golden highlight */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+}
+
+.side-nav ul li:hover > .dropdown {
+    display: block; /* Show submenu on hover */
+}
