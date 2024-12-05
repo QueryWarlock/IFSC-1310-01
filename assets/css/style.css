@@ -27,6 +27,8 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    position: relative; /* Ensure relative positioning */
+    overflow: hidden; /* Hide overflowing leaves */
 }
 
 header h1 {
@@ -236,3 +238,12 @@ footer {
 .side-nav ul li:hover > .dropdown {
     display: block; /* Show submenu on hover */
 }
+
+.dot {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: url('http://www.clipartqueen.com/image-files/red-lobed-fall-clipart-leaf.png');
+    background-size: 100% 100%;
+  }
+  
