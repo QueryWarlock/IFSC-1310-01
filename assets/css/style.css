@@ -80,17 +80,20 @@ main {
     border: 1px solid #f4a460; /* Sandy brown border */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
 main h2 {
     font-size: 1.8em;
     margin-bottom: 15px;
     color: #8b4513; /* Saddle brown for headings */
+    
 }
 
 main p {
     margin-bottom: 10px;
     color: #5c4033; /* Warm brown for text */
+    
 }
 
 /* Footer */
@@ -247,3 +250,50 @@ footer {
     background-size: 100% 100%;
   }
   
+
+  .Accessibility {
+    background-color: #fffaf0; /* Warm cream for a cozy fall feel */
+    border: 2px solid #cd853f; /* Peru color border for earthy tones */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.Accessibility h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #8b4513; /* Saddle brown for heading */
+    text-align: center; /* Centered heading */
+}
+
+.Accessibility p {
+    color: #5c4033; /* Warm brown text for readability */
+    line-height: 2.1; /* Improved readability */
+    padding-bottom: 10px;
+    text-indent: 20px; /* Indents the first line */
+    
+}
+
+.Enhancement {
+    background-color: #fdf5e6; /* Warm beige for fall aesthetics */
+    border: 2px solid #d2691e; /* Chocolate border for richness */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.Enhancement h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #8b0000; /* Dark red for heading to evoke fall leaves */
+    text-align: center; /* Centered heading */
+}
+
+.Enhancement p {
+    color: #7a5a00; /* Golden brown text for warmth */
+    line-height: 2.1; /* Improved readability */
+    padding-bottom: 10px;
+    text-indent: 20px; /* Indents the first line */
+}
