@@ -297,3 +297,26 @@ footer {
     padding-bottom: 10px;
     text-indent: 20px; /* Indents the first line */
 }
+
+.Reflection {
+    background-color: #f5f5dc; /* Beige for a warm fall feel */
+    border: 2px solid #8b4513; /* Saddle brown border for contrast */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.Reflection h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #8b4513; /* Saddle brown for heading */
+    text-align: center; /* Centered heading */
+}
+
+.Reflection p {
+    color: #5c4033; /* Warm brown text for readability */
+    line-height: 2.1; /* Improved readability */
+    padding-bottom: 10px;
+    text-indent: 20px; /* Indents the first line */
+}
