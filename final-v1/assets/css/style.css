@@ -477,6 +477,12 @@ footer a:hover {
 /* ====================================
    Modal Styling for Form
 ==================================== */
+#form-modal iframe {
+    border: none; /* Removes iframe border */
+    width: 100%; /* Full width */
+    height: 600px; /* Fixed height */
+    
+}
 
 .modal {
     display: none; /* Hidden by default */
