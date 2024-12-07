@@ -23,104 +23,6 @@ body.history {
     line-height: 3.6;
 }
 
- 
-/* Wrapper for Centered Content */
-.wrapper {
-    width: 90%; /* Limits width of content */
-    max-width: 1200px; /* Maximum width */
-    margin: 0 auto; /* Centers content */
-    padding: 20px; /* Inner padding for spacing */
-}
-
-/* Flexbox Row Styling for Main Content */
-.flex-row {
-    display: flex; /* Flex layout for horizontal alignment */
-    align-items: flex-start; /* Aligns items to the top */
-    gap: 20px; /* Adds space between flex items */
-    margin-bottom: 20px; /* Bottom margin between rows */
-    padding: 20px; /* Inner padding */
-    background-color: #2a2a2a; /* Dark background for contrast */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
-}
-
-/* Image Figure Styling */
-.flex-row figure {
-    position: relative; /* Establishes positioning context for the figcaption */
-    flex: 1; /* Ensures the figure takes up proportional space */
-    max-width: 300px; /* Limits figure width */
-    text-align: center; /* Centers figure content */
-    margin-top: 180px; /* Adds space below the figure */
-}
-
-.flex-row img {
-    width: 100%; /* Ensures image is responsive */
-    border-radius: 8px; /* Adds rounded corners to the image */
-    display: block; /* Ensures no extra inline space */
-}
-
-.flex-row figcaption {
-    position: absolute; /* Allows precise positioning */
-    top: -200px; /* Moves figcaption above the image */
-    left: 50%; /* Centers the caption horizontally */
-    transform: translateX(-50%); /* Ensures the figcaption is centered */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
-    color: #ffffff; /* White text for contrast */
-    font-size: 16px; /* Font size for the caption */
-    font-weight: 700; /* Makes the text stand out */
-    background: linear-gradient(to bottom right, #00bfff, #cfcdc4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 15px rgba(0, 191, 255, 0.7);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 4px 10px; /* Adds padding around the text */
-    border-radius: 10px; /* Rounds the corners */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Adds depth with shadow */
-    text-transform: uppercase; /* Ensures consistent text style */
-    letter-spacing: 1px; /* Spreads out the letters slightly */
-    z-index: 1; /* Ensures the caption is above the image */
-    max-width: 90%;
-    white-space: nowrap;
-}
-
-.flex-row p {
-     
-    font-size: 1.1em; /* Slightly larger font size */
-    line-gap-override: double; /* Double line spacing */
-    text-align: justify; /* Justifies text */
-    text-indent: 30px; /* Indents the first line */
-    margin-bottom: 20px; /* Space below the paragraph */
-}
-
-.indented-paragraph {
-    display: block; /* Ensures it behaves like a block element */
-    text-indent: 30px; /* Indents the first line */
-    margin-top: 30px; /* Adds space between paragraphs */
-}
-
-p span {
-    text-indent: 30px;
-    display: block;
-}
-
-
-
-/* List Styling within Flex Row */
-.flex-row ul {
-    flex: 2; /* Takes up 2 portions of available space */
-    list-style: none; /* Removes bullets */
-    padding-left: 20px; /* Indentation for alignment */
-    color: #e6e6e6; /* Light gray text */
-}
-
-.flex-row ul li {
-    margin-bottom: 10px; /* Spacing between list items */
-    padding: 10px; /* Inner padding for items */
-    background-color: #333333; /* Dark background for contrast */
-    border-radius: 6px; /* Rounded corners */
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3); /* Inner shadow effect */
-}
 
 /* Header Styling */
 
@@ -189,11 +91,7 @@ header img.logo {
         display: inline-block; /* Keeps it aligned in a block */
     }
     
-
-    
-    
-
-/* Navigation Styling */
+ /* Navigation Styling */
 nav ul {
     list-style: none; /* Removes bullets */
     display: flex; /* Flex layout for horizontal nav */
@@ -260,7 +158,105 @@ h3 {
     margin-top: 1.5em; /* Adds top margin for spacing */
 }
 
+/* Wrapper for Centered Content */
+.wrapper {
+    width: 90%; /* Limits width of content */
+    max-width: 1200px; /* Maximum width */
+    margin: 0 auto; /* Centers content */
+    padding: 20px; /* Inner padding for spacing */
+}
 
+/* Flexbox Row Styling for Main Content */
+.flex-row {
+    display: flex; /* Flex layout for horizontal alignment */
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 20px; /* Adds space between flex items */
+    margin-bottom: 20px; /* Bottom margin between rows */
+    padding: 20px; /* Inner padding */
+    background-color: #2a2a2a; /* Dark background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Styling for Images in Flexbox Rows in Index.html */
+.flex-row figure {
+    position: relative; /* Establishes positioning context for the figcaption */
+    flex: 1; /* Ensures the figure takes up proportional space */
+    max-width: 300px; /* Limits figure width */
+    text-align: center; /* Centers figure content */
+    margin-top: 180px; /* Adds space below the figure */
+}
+
+.flex-row img {
+    width: 100%; /* Ensures image is responsive */
+    border-radius: 8px; /* Adds rounded corners to the image */
+    display: block; /* Ensures no extra inline space */
+}
+
+.flex-row figcaption {
+    position: absolute; /* Allows precise positioning */
+    top: -200px; /* Moves figcaption above the image */
+    left: 50%; /* Centers the caption horizontally */
+    transform: translateX(-50%); /* Ensures the figcaption is centered */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    color: #ffffff; /* White text for contrast */
+    font-size: 16px; /* Font size for the caption */
+    font-weight: 700; /* Makes the text stand out */
+    background: linear-gradient(to bottom right, #00bfff, #cfcdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 15px rgba(0, 191, 255, 0.7);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 10px; /* Adds padding around the text */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Adds depth with shadow */
+    text-transform: uppercase; /* Ensures consistent text style */
+    letter-spacing: 1px; /* Spreads out the letters slightly */
+    z-index: 1; /* Ensures the caption is above the image */
+    max-width: 90%;
+    white-space: nowrap;
+}
+/* Paragraph styling in Flex Rows (Index & History HTML)*/
+.flex-row p {
+     
+    font-size: 1.1em; /* Slightly larger font size */
+    line-gap-override: double; /* Double line spacing */
+    text-align: justify; /* Justifies text */
+    text-indent: 30px; /* Indents the first line */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.indented-paragraph {
+    display: block; /* Ensures it behaves like a block element */
+    text-indent: 30px; /* Indents the first line */
+    margin-top: 30px; /* Adds space between paragraphs */
+}
+
+p span {
+    text-indent: 30px;
+    display: block;
+}
+
+
+
+/* List Styling within Flex Row */
+.flex-row ul {
+    flex: 2; /* Takes up 2 portions of available space */
+    list-style: none; /* Removes bullets */
+    padding-left: 20px; /* Indentation for alignment */
+    color: #e6e6e6; /* Light gray text */
+}
+/* List Styling in Flex Rows (Index HTML)*/
+.flex-row ul li {
+    margin-bottom: 10px; /* Spacing between list items */
+    padding: 10px; /* Inner padding for items */
+    background-color: #333333; /* Dark background for contrast */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3); /* Inner shadow effect */
+}
+
+/* Styling for History's Table */
 .missions-table {
     width: 100%;
     border-collapse: collapse; /* Merges table borders */
@@ -298,39 +294,52 @@ h3 {
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
+/* ====================================
+   FAQ Page Body Styling
+   ==================================== */
 
-/* Specific Flexbox Row Styling for FAQ Page */
-
-
+/* Flexbox layout for rows on FAQ page */
 body.faq-page .flex-row {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: stretch; /* Make elements fill the container width */
-    gap: 20px; /* Maintain spacing between items */
-    padding: 20px; /* Inner padding */
-    background-color: #2a2a2a; /* Background color for consistency */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add depth with shadow */
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: stretch; /* Items fill the container width */
+    gap: 20px; /* Adds spacing between rows */
+    padding: 20px; /* Adds inner spacing */
+    background-color: #2a2a2a; /* Dark background for consistency */
+    border-radius: 8px; /* Rounded corners for styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
 }
 
+/* Overall body styling for the FAQ page */
 body.faq-page {
-    display: flex;
-    flex-direction: column; /* Arrange elements in a vertical column */
-    min-height: 100vh; /* Ensure body is at least the height of the viewport */
-    margin: 0; /* Remove default margins */
+    display: flex; /* Enables Flexbox layout */
+    flex-direction: column; /* Arranges elements in a vertical column */
+    min-height: 100vh; /* Ensures full viewport height */
+    margin: 0; /* Removes default body margins */
 }
 
+/* Main content styling for FAQ page */
 body.faq-page main {
-    flex: 1; /* Allow main content to grow and take up available space */
+    flex: 1; /* Allows the main content to grow and fill available space */
 }
 
+/* Footer and copyright section styling on FAQ page */
 body.faq-page footer,
 body.faq-page .copyrightText {
-    flex-shrink: 0; /* Prevent the footer from shrinking */
+    flex-shrink: 0; /* Prevents footer and copyright section from shrinking */
 }
 
+/* Header styles for FAQ page headings */
+body.faq-page h2,
+body.faq-page h3 {
+    display: grid; /* Uses grid for layout */
+    position: relative; /* For future positioning or styling tweaks */
+    text-align: center; /* Centers the text within the heading */
+}
 
-/* Footer Styling */
+/*==========================
+     Footer Styling 
+==============================*/
 footer {
     background-color: #444444; /* Dark footer background */
     padding: 50px 100px; /* Padding for spacing */
@@ -378,139 +387,11 @@ footer a {
 footer a:hover {
     color: #ffffff; /* White color on hover */
 }
+/* ====================================
+            Responsive Design
+======================================*/
 
-
-/* Style for the form button in the footer */
-.form-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #00bfff; /* Button background color */
-    color: #ffffff; /* Text color */
-    text-decoration: none; /* Remove underline */
-    font-size: 1em; /* Button text size */
-    font-weight: bold; /* Bold text */
-    border-radius: 8px; /* Rounded corners */
-    text-align: center; /* Center text */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover transition */
-}
-
-.form-button:hover {
-    background-color: #008ecc; /* Darker shade on hover */
-    transform: scale(1.05); /* Slight zoom on hover */
-}
-
-/* About Us Section */
-.aboutus {
-    text-align: center; /* Center-aligns content */
-    padding: 0px 0; /* Vertical spacing */
-}
-
-.aboutus h2::before {
-    content: ''; /* Decorative line */
-    display: block; /* Line displayed as block */
-    width: 50px; /* Line width */
-    height: 2px; /* Line thickness */
-    margin: 0 auto; /* Centers the decorative line */
-    background: #00bfff; /* Blue color */
-    margin-top: 8px; /* Space between heading and line */
-}
-
-/* Social Icons Styling */
-.sci {
-    display: flex; /* Flex layout for icons */
-    justify-content: center; /* Centers icons */
-    gap: 10px; /* Space between icons */
-    margin-top: 20px; /* Space above icon list */
-}
-
-.sci li {
-    list-style: none; /* Removes bullet */
-}
-
-.sci li a {
-    width: 40px; /* Icon button size */
-    height: 40px; /* Icon button height */
-    display: flex;
-    align-items: center; /* Centers icon vertically */
-    justify-content: center; /* Centers icon horizontally */
-    background: #ffffff; /* Icon background color */
-    border-radius: 4px;
-    color: #00bfff; /* Icon color */
-    font-size: 18px;
-}
-
-.sci li a:hover {
-    background: #00bfff; /* Changes background on hover */
-    color: #ffffff; /* Changes icon color on hover */
-}
-
-/* Quick Links Styling */
-.quicklinks {
-    text-align: center; /* Centers links */
-}
-
-.quicklinks li {
-    list-style: none; /* Removes bullet */
-}
-
-.quicklinks li a {
-    color: #cfcfcf; /* Link color */
-    text-decoration: none; /* Removes underline */
-    margin-bottom: 10px; /* Space below each link */
-    display: inline-block; /* Prevents wrapping */
-}
-
-.quicklinks li a:hover {
-    color: #00bfff; /* Blue color on hover */
-}
-
-/* Contact Info Styling */
-.info {
-    display: flex; /* Flex layout for list */
-    flex-direction: column; /* Column layout */
-    gap: 10px; /* Space between items */
-}
-
-.info li {
-    display: grid; /* Grid layout for icon and text */
-    grid-template-columns: 30px 1fr; /* Icon and text columns */
-    gap: 10px;
-}
-
-.info li span:first-child {
-    color: #00bfff; /* Icon color */
-    font-size: 20px;
-}
-
-.info a {
-    color: #cfcfcf; /* Gray color for links */
-    text-decoration: none; /* Removes underline */
-}
-
-.info a:hover {
-    color: #00bfff; /* Blue color on hover */
-}
-
-/* Copyright Text */
-.copyrightText {
-    background: #333333; /* Dark gray background */
-    padding: 8px; /* Inner padding */
-    text-align: center; /* Center-aligns text */
-    color: #cfcfcf; /* Light gray color */
-}
-
-/* Responsive Design */
-@media (max-width: 991px) {
-    header h1 {
-        font-size: 1.8em; /* Adjusts font size on smaller screens */
-    }
-
-    footer {
-        padding: 40px; /* Reduces padding on smaller screens */
-    }
-}
-
+/* Responsive Design for Footer */
 @media (max-width: 768px) {
     footer .container {
         grid-template-columns: 1fr; /* Stacks columns vertically */
@@ -522,214 +403,225 @@ footer a:hover {
     }
 }
 
-details {
-    margin-bottom: 15px;
-    background-color: #2a2a2a; /* Matches flex-row background */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    cursor: pointer;
-    color: #ffffff;
-    transition: all 0.3s ease;
+/* ====================================
+   Accordion Styling for FAQ Section
+==================================== */
+
+.accordion {
+    width: 100%; /* Full width of the container */
+    max-width: 800px; /* Limits the maximum width */
+    margin: 20px auto; /* Centers accordion on the page */
+    border: 1px solid #333; /* Border styling */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #2a2a2a; /* Dark background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds depth with shadow */
+    font-family: 'Roboto Mono', monospace; /* Sets font */
 }
 
-details[open] {
-    background-color: #333333; /* Darker shade for open details */
-    border: 2px solid #00bfff; /* Highlight border when open */
+.accordion-item {
+    border-bottom: 1px solid #333; /* Separator between items */
 }
 
-summary {
-    font-size: 1.2em;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: linear-gradient(to right, #00bfff, #cfcdc4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 10px;
-    cursor: pointer;
-    list-style: none; /* Removes default arrow styling */
+.accordion-header {
+    background-color: #333333; /* Header background */
+    color: #00bfff; /* Light blue text */
+    padding: 15px 20px; /* Spacing inside header */
+    font-size: 1.2em; /* Font size for header */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth hover transition */
 }
 
-details p {
-    margin-top: 10px;
-    font-size: 1em;
-    line-height: 1.6;
-    color: #e6e6e6; /* Slightly lighter text for better readability */
+.accordion-header:hover {
+    background-color: #444444; /* Slightly lighter on hover */
 }
 
-details summary:hover {
-    text-decoration: underline; /* Adds hover effect for summary */
+.accordion-content {
+    max-height: 0; /* Hidden by default */
+    overflow: hidden; /* Prevents overflow */
+    transition: max-height 0.3s ease; /* Smooth expansion */
+    padding: 0 20px; /* Inner padding */
+    background-color: #2a2a2a; /* Matches dark background */
+    color: #e6e6e6; /* Light text for readability */
 }
 
-/* Responsive Table Design */
-@media screen and (max-width: 768px) {
-    .missions-table {
-        font-size: 0.9em; /* Scales text down on smaller screens */
-    }
-
-    .missions-table th, .missions-table td {
-        padding: 10px; /* Adjusts padding for smaller screens */
-    }
+.accordion-content p {
+    padding: 15px 0; /* Inner spacing for paragraphs */
+    margin: 0; /* No external margin */
+    border-top: 1px solid #444; /* Separator at the top */
 }
 
-.flex-row img, .slideshow img {
-    display: block; /* Ensures no extra inline space */
-    width: 100%; /* Ensures image is responsive */
-    max-width: 300px; /* Matches the old max-width for consistency */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 8px; /* Adds rounded corners to the images */
-    object-fit: cover; /* Ensures the image fills the space without distortion */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Matches shadow styling */
+/* ====================================
+   Form Button Styling
+==================================== */
+
+.form-button {
+    display: inline-block; /* Aligns inline */
+    margin-top: 15px; /* Spacing above button */
+    padding: 10px 20px; /* Inner padding */
+    background-color: #00bfff; /* Button background color */
+    color: #ffffff; /* Button text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 1em; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Centers text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover transition */
 }
 
-.slideshow {
-    position: relative;
-    overflow: hidden;
-    width: 100%; /* Maintain responsiveness */
-    max-width: 300px; /* Ensure it aligns with the layout */
-    height: 200px; /* Set a fixed height for all images */
-    border-radius: 8px; /* Keep consistent rounded corners */
-    margin: 0 auto; /* Center the slideshow */
+.form-button:hover {
+    background-color: #008ecc; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
-.slideshow img {
-    width: 100%; /* Ensure images span the container width */
-    height: 100%; /* Force height to match the container */
-    object-fit: cover; /* Crop image to fit the container without distortion */
-    object-position: center; /* Center the image focus */
-    display: block; /* Eliminate extra inline space */
-    border-radius: 8px; /* Match the container's rounded corners */
-}
+/* ====================================
+   Modal Styling for Form
+==================================== */
 
-
-.slideshow img:not(:first-child) {
-    opacity: 0; /* Hide all images except the first one */
-}
-
-.slideshow img.active {
-    opacity: 1; /* Show active image */
-    transform: scale(1.05); /* Slight zoom for focus */
-}
-
-
-/* Modal Styles */
 .modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* On top */
+    position: fixed; /* Positioned relative to the viewport */
+    z-index: 1000; /* On top of other elements */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+    background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
 }
 
 .modal-content {
-    position: relative;
-    margin: 5% auto; /* Center the modal */
-    padding: 20px;
-    background-color: #2a2a2a; /* Matches the site design */
-    width: 80%; /* Width of the modal */
-    max-width: 800px; /* Limit maximum width */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    color: #ffffff;
+    position: relative; /* Context for positioning child elements */
+    margin: 5% auto; /* Centers modal */
+    padding: 20px; /* Inner padding */
+    background-color: #2a2a2a; /* Modal background */
+    width: 80%; /* 80% of the screen width */
+    max-width: 800px; /* Maximum width limit */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    color: #ffffff; /* Text color */
 }
-
-/* Close Button */
+/* ====================================
+    Close Button for Modal 
+==================================== */
 .close-modal {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
+    position: absolute; /* Positioned in the modal */
+    top: 10px; /* Offset from the top */
+    right: 15px; /* Offset from the right */
+    color: #ffffff; /* Default color */
+    font-size: 24px; /* Font size for button */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor */
 }
 
 .close-modal:hover,
 .close-modal:focus {
-    color: #00bfff;
-    text-decoration: none;
-    cursor: pointer;
+    color: #00bfff; /* Light blue on hover */
+    text-decoration: none; /* No underline */
 }
 
+/* ====================================
+   About Us Section Styling
+==================================== */
 
-/* Specific Flexbox Row Styling for FAQ Page */
+.aboutus {
+    text-align: center; /* Centers content */
+    padding: 0px 0; /* No padding */
+}
 
+.aboutus h2::before {
+    content: ''; /* Decorative line */
+    display: block; /* Display as block */
+    width: 50px; /* Line width */
+    height: 2px; /* Line height */
+    margin: 0 auto; /* Center alignment */
+    background: #00bfff; /* Line color */
+    margin-top: 8px; /* Margin above the line */
+}
 
-body.faq-page .flex-row {
+/* ====================================
+   Social Icons Styling
+==================================== */
+
+.sci {
+    display: flex; /* Flex layout */
+    justify-content: center; /* Centers icons */
+    gap: 10px; /* Space between icons */
+    margin-top: 20px; /* Spacing above icons */
+}
+
+.sci li {
+    list-style: none; /* Removes list bullets */
+}
+
+.sci li a {
+    width: 40px; /* Icon size */
+    height: 40px; /* Icon size */
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: stretch; /* Make elements fill the container width */
-    gap: 20px; /* Maintain spacing between items */
-    padding: 20px; /* Inner padding */
-    background-color: #2a2a2a; /* Background color for consistency */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add depth with shadow */
+    align-items: center; /* Centers icon vertically */
+    justify-content: center; /* Centers icon horizontally */
+    background: #ffffff; /* Background color */
+    border-radius: 4px; /* Rounded corners */
+    color: #00bfff; /* Icon color */
+    font-size: 18px; /* Icon font size */
 }
 
-body.faq-page {
-    display: flex;
-    flex-direction: column; /* Arrange elements in a vertical column */
-    min-height: 100vh; /* Ensure body is at least the height of the viewport */
-    margin: 0; /* Remove default margins */
+.sci li a:hover {
+    background: #00bfff; /* Background on hover */
+    color: #ffffff; /* Icon color on hover */
 }
 
-body.faq-page main {
-    flex: 1; /* Allow main content to grow and take up available space */
+/* ====================================
+   Quick Links Styling
+==================================== */
+
+.quicklinks {
+    text-align: center; /* Centers links */
 }
 
-body.faq-page footer,
-body.faq-page .copyrightText {
-    flex-shrink: 0; /* Prevent the footer from shrinking */
+.quicklinks li {
+    list-style: none; /* Removes bullets */
 }
 
-body.faq-page h2,
-body.faq-page h3 {
-    display: grid;
-    position: relative;
-    text-align: center;
-}
-.accordion {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-    border: 1px solid #333;
-    border-radius: 8px;
-    background-color: #2a2a2a;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    font-family: 'Roboto Mono', monospace;
+.quicklinks li a {
+    color: #cfcfcf; /* Link color */
+    text-decoration: none; /* Removes underline */
+    margin-bottom: 10px; /* Spacing between links */
+    display: inline-block; /* Prevents wrapping */
 }
 
-.accordion-item {
-    border-bottom: 1px solid #333;
+.quicklinks li a:hover {
+    color: #00bfff; /* Changes color on hover */
 }
 
-.accordion-header {
-    background-color: #333333;
-    color: #00bfff;
-    padding: 15px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: all 0.3s ease;
+/* ====================================
+   Back-to-Top Button Styling
+==================================== */
+
+.back-to-top {
+    position: fixed; /* Stays fixed in place */
+    bottom: 20px; /* Offset from the bottom */
+    right: 20px; /* Offset from the right */
+    display: none; /* Hidden by default */
+    padding: 10px 15px; /* Padding inside the button */
+    font-size: 14px; /* Text size */
+    background-color: #00bfff; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center; /* Centers text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: opacity 0.3s; /* Smooth fade */
 }
 
-.accordion-header:hover {
-    background-color: #444444;
+.back-to-top:hover {
+    background-color: #008ecc; /* Darker shade on hover */
 }
 
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    padding: 0 20px;
-    background-color: #2a2a2a;
-    color: #e6e6e6;
-}
+/* ====================================
+   Copyright Text Styling
+==================================== */
 
-.accordion-content p {
-    padding: 15px 0;
-    margin: 0;
-    border-top: 1px solid #444;
+.copyrightText {
+    background: #333333; /* Dark gray background */
+    padding: 8px; /* Inner padding */
+    text-align: center; /* Centers text */
+    color: #cfcfcf; /* Text color */
 }
