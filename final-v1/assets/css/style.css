@@ -335,6 +335,7 @@ body.faq-page h3 {
     display: grid; /* Uses grid for layout */
     position: relative; /* For future positioning or styling tweaks */
     text-align: center; /* Centers the text within the heading */
+    
 }
 
 /*==========================
